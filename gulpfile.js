@@ -1,6 +1,10 @@
-const gulp = require('gulp');
+const { src, dest } = require('gulp');
+const slim = require('gulp-slim');
 
-gulp.task('default', (callback) => {
-  console.log('---', 'Hi, World!');
-  callback();
-});
+function development() {
+  return src('./src/*.slim')
+    .pipe(slim({ pretty: true }))
+    .pipe(dest('./public/'));
+}
+
+exports.default = development;
