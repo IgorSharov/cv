@@ -19,10 +19,13 @@
   "author": "Igor Sharov",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.24.7",
     "eslint": "^5.5.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "gulp": "^4.0.0",
-    "gulp-slim": "^0.3.0"
+    "gulp-sass": "^4.0.1",
+    "gulp-slim": "^0.3.0",
+    "pump": "^3.0.0"
   }
 }
